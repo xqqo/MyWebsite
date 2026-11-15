@@ -230,3 +230,46 @@ h1, h2, h3, p { margin-top: 0; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* العنوان والصورة الجديدة */
+.hero-title { font-size: clamp(32px, 4.5vw, 48px) !important; line-height: 1.65 !important; letter-spacing: -.7px !important; }
+.ai-image-card { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; overflow: hidden; margin-top: 17px; border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(120deg, rgba(14, 24, 40, .9), rgba(9, 15, 26, .95)); }
+.ai-image-card img { display: block; width: 100%; height: 100%; min-height: 235px; object-fit: cover; }
+.ai-image-copy { padding: 28px 30px; }
+.ai-image-copy h3 { margin: 8px 0; font-family: "Alexandria", var(--font); font-size: 19px; line-height: 1.8; }
+.ai-image-copy p { margin: 0; color: #94a2b7; font-size: 11px; line-height: 2.1; }
+
+/* نموذج تواصل تجريبي مع توضيح عدم إرسال البيانات */
+.contact-section { padding-top: 78px; }
+.contact-card { display: grid; grid-template-columns: .85fr 1.15fr; overflow: hidden; border: 1px solid rgba(66, 146, 220, .2); border-radius: 12px; background: linear-gradient(120deg, #0d1726, #09101b); }
+.contact-intro { display: flex; align-items: flex-start; flex-direction: column; justify-content: center; padding: 34px; border-left: 1px solid rgba(145, 173, 209, .09); background: radial-gradient(ellipse at 50% 20%, rgba(21, 131, 224, .13), transparent 68%); }
+.contact-symbol { display: grid; width: 54px; height: 54px; place-items: center; margin-bottom: 15px; border: 1px solid rgba(76, 173, 238, .2); border-radius: 12px; background: rgba(28, 104, 170, .13); color: #73d4ff; }
+.contact-symbol svg { width: 38px; height: 38px; }
+.contact-intro h3 { margin: 0 0 7px; font-family: "Alexandria", var(--font); font-size: 18px; }
+.contact-intro > p { margin: 0; color: #9ba9bb; font-size: 11px; line-height: 2; }
+.contact-note { display: flex; align-items: center; gap: 8px; margin-top: 18px; color: #7e94a9; font-size: 9px; }
+.contact-note i { width: 6px; height: 6px; border-radius: 50%; background: #64d9bd; box-shadow: 0 0 10px rgba(100, 217, 189, .6); }
+.contact-form { display: grid; gap: 16px; padding: 34px; }
+.form-field { display: grid; gap: 7px; }
+.form-field label { color: #c4cfdd; font-size: 10px; font-weight: 700; }
+.form-field input { width: 100%; min-height: 46px; padding: 10px 13px; border: 1px solid rgba(138, 166, 199, .17); border-radius: 7px; outline: none; background: rgba(5, 10, 18, .65); color: #f3f6ff; font: inherit; font-size: 11px; transition: border-color .2s ease, box-shadow .2s ease; }
+.form-field input::placeholder { color: #66778d; }
+.form-field input:focus { border-color: rgba(79, 182, 247, .7); box-shadow: 0 0 0 3px rgba(38, 139, 221, .12); }
+.form-field input:invalid:not(:placeholder-shown) { border-color: rgba(228, 100, 111, .55); }
+.contact-submit { justify-self: start; min-width: 120px; cursor: pointer; }
+.form-status { margin: 0; padding: 10px 12px; border: 1px solid rgba(72, 198, 155, .28); border-radius: 7px; background: rgba(35, 136, 104, .12); color: #91e2c3; font-size: 10px; line-height: 1.9; }
+
+@media (max-width: 620px) {
+  .hero-title { font-size: clamp(30px, 8.5vw, 40px) !important; }
+  .ai-image-card { grid-template-columns: 1fr; }
+  .ai-image-card img { min-height: 0; aspect-ratio: 1.56; }
+  .ai-image-copy { padding: 21px 20px 24px; }
+  .ai-image-copy h3 { font-size: 16px; }
+  .ai-image-copy p { font-size: 10px; }
+  .contact-section { padding-top: 60px; }
+  .contact-card { grid-template-columns: 1fr; }
+  .contact-intro { padding: 24px 21px; border-bottom: 1px solid rgba(145, 173, 209, .09); border-left: 0; }
+  .contact-intro h3 { font-size: 16px; }
+  .contact-form { gap: 13px; padding: 22px 21px 24px; }
+  .contact-submit { width: 100%; }
+}

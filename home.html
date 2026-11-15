@@ -43,11 +43,12 @@
       <div class="container hero-layout">
         <div class="hero-copy reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span> بوابتك إلى المستقبل الرقمي</span>
-          <h1>نستكشف التقنية،<br>ونصنع <span class="gradient-text">المستقبل.</span></h1>
+          <h1 class="hero-title">عالم التقنية<br><span class="gradient-text">والذكاء الاصطناعي</span></h1>
           <p class="hero-description">رحلة ممتعة إلى عالم الذكاء الاصطناعي والبرمجة والأمن السيبراني؛ لنتعلم كيف تعمل التقنيات من حولنا، وكيف نستخدمها لصناعة أثر إيجابي.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#الذكاء-الاصطناعي">ابدأ رحلتك <span aria-hidden="true">←</span></a>
             <a class="button button-quiet" href="#البرمجة"><span class="play-icon" aria-hidden="true">▶</span> استكشف المجالات</a>
+            <a class="button button-quiet" href="#تواصل-معنا">تواصل معنا <span aria-hidden="true">←</span></a>
           </div>
           <div class="hero-note"><span class="note-line"></span> المعرفة التقنية خطوة أولى نحو الابتكار</div>
         </div>
@@ -104,6 +105,14 @@
               <div class="benefit"><span class="benefit-icon">♡</span><span><b>يدعم التعلّم</b><small>يقدّم تجارب تناسب احتياجاتنا.</small></span></div>
               <div class="benefit"><span class="benefit-icon">↗</span><span><b>يفتح آفاقًا جديدة</b><small>يساعد في الطب والعلوم وغيرها.</small></span></div>
             </div>
+          </div>
+        </div>
+        <div class="ai-image-card reveal">
+          <img src="ai-illustration.svg" alt="رسم توضيحي لشبكة ذكاء اصطناعي متصلة بالبيانات والأفكار" width="720" height="460" loading="lazy">
+          <div class="ai-image-copy">
+            <span class="mini-label">أفكار تتحوّل إلى حلول</span>
+            <h3>الذكاء الاصطناعي يربط بين البيانات والإبداع</h3>
+            <p>من خلال تحليل المعلومات والتعرّف إلى الأنماط، تساعدنا الأنظمة الذكية على استكشاف أفكار جديدة في التعلّم والعلوم والحياة اليومية.</p>
           </div>
         </div>
         <div class="example-row reveal"><span class="example-label">نراه في حياتنا اليومية</span><span class="example-pill">المساعدات الصوتية</span><span class="example-pill">اقتراحات المحتوى</span><span class="example-pill">التعرّف على الصور</span><span class="example-pill">الترجمة الآلية</span></div>
@@ -187,6 +196,37 @@
             <button type="button" class="quiz-option" data-correct="false">أرسلها إلى أصدقائي</button>
           </div>
           <p class="quiz-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="تواصل-معنا">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">04 — يسعدنا تواصلك</span><h2>تواصل <span class="gradient-text">معنا</span></h2></div>
+          <p>هل لديك سؤال أو فكرة؟ اكتب اسمك وبريدك الإلكتروني في النموذج. هذا نموذج تجريبي ولا يرسل البيانات إلى أي جهة.</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-intro">
+            <span class="contact-symbol" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M10 17h44v30H10z" stroke="currentColor" stroke-width="2"/><path d="m12 20 20 16 20-16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="49" cy="15" r="7" fill="#0d1726" stroke="currentColor" stroke-width="2"/><path d="M49 11v5m0 3h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>كل فكرة تبدأ بحوار</h3>
+            <p>املأ الحقول المطلوبة، وسيتحقق الموقع من الاسم والبريد الإلكتروني قبل عرض نتيجة تجريبية.</p>
+            <span class="contact-note"><i></i> لا يتم إرسال أو حفظ بياناتك</span>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-field">
+              <label for="contact-name">الاسم</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" placeholder="اكتب اسمك" required>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">البريد الإلكتروني</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" dir="ltr" required>
+            </div>
+            <button class="button button-primary contact-submit" type="submit">إرسال <span aria-hidden="true">←</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
         </div>
       </div>
     </section>

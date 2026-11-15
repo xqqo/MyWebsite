@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" fill="none">
+  <defs>
+    <linearGradient id="background" x1="62" y1="35" x2="653" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111F34"/>
+      <stop offset="1" stop-color="#080E19"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="matrix(0 185 -230 0 360 224)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#147DDB" stop-opacity=".27"/>
+      <stop offset="1" stop-color="#0B1422" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brain" x1="240" y1="119" x2="478" y2="321" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76E4FF"/>
+      <stop offset="1" stop-color="#3289FF"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="306" y1="175" x2="411" y2="281" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#183A61"/>
+      <stop offset="1" stop-color="#0B1728"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#7FA9D0" stroke-opacity=".09"/>
+    </pattern>
+    <filter id="glow" x="202" y="89" width="316" height="281" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect width="720" height="460" rx="22" fill="url(#background)"/>
+  <rect width="720" height="460" rx="22" fill="url(#grid)"/>
+  <rect width="720" height="460" rx="22" fill="url(#halo)"/>
+  <circle cx="360" cy="230" r="165" stroke="#399FEA" stroke-opacity=".16"/>
+  <circle cx="360" cy="230" r="127" stroke="#55C7FF" stroke-opacity=".22" stroke-dasharray="5 9"/>
+  <g stroke="#48B9F5" stroke-opacity=".56" stroke-width="2">
+    <path d="m294 180-63-40-58 17M426 180l63-40 58 17M294 280l-63 40-58-17M426 280l63 40 58-17"/>
+    <path d="M360 131V94m0 235v37M272 230h-48m272 0h48"/>
+  </g>
+  <g fill="#72DFFF">
+    <circle cx="173" cy="157" r="5"/><circle cx="231" cy="140" r="4"/>
+    <circle cx="547" cy="157" r="5"/><circle cx="489" cy="140" r="4"/>
+    <circle cx="173" cy="303" r="5"/><circle cx="231" cy="320" r="4"/>
+    <circle cx="547" cy="303" r="5"/><circle cx="489" cy="320" r="4"/>
+    <circle cx="360" cy="94" r="5"/><circle cx="360" cy="366" r="5"/>
+    <circle cx="224" cy="230" r="5"/><circle cx="496" cy="230" r="5"/>
+  </g>
+  <path d="M249 212c0-34 25-61 57-61 18-31 63-35 86-7 32-1 57 25 57 57 20 27 9 66-21 78-15 32-58 40-83 16-29 17-68 5-80-25-30-10-42-43-25-68Z" stroke="url(#brain)" stroke-width="3" stroke-linejoin="round" opacity=".9"/>
+  <path d="M249 212c0-34 25-61 57-61 18-31 63-35 86-7 32-1 57 25 57 57 20 27 9 66-21 78-15 32-58 40-83 16-29 17-68 5-80-25-30-10-42-43-25-68Z" stroke="url(#brain)" stroke-width="10" opacity=".5" filter="url(#glow)"/>
+  <path d="M360 147v44m-27-36 11 27m45-27-11 27m-62-5 25 13m85-13-25 13m-68 30 28-8m74 8-28-8m-47 34v-25m-34 12 16-20m70 20-16-20" stroke="#60D7FF" stroke-opacity=".76" stroke-width="2" stroke-linecap="round"/>
+  <rect x="311" y="184" width="98" height="92" rx="19" fill="url(#chip)" stroke="#64D7FF" stroke-opacity=".75" stroke-width="2"/>
+  <path d="M338 227v-21l22 17 22-17v21m-49-9h9m36 0h9m-27-31v-9m0 80v-9" stroke="#88E8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="307" fill="#A9C6DE" font-family="Tahoma,Arial,sans-serif" font-size="13" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override">بيانات  •  تعلّم  •  أفكار</text>
+</svg>

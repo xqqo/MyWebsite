@@ -80,3 +80,33 @@ backToTop.addEventListener("click", () => {
 });
 
 document.querySelector("#current-year").textContent = new Date().getFullYear();
+
+// يتحقق من الاسم والبريد، ويعرض نتيجة تجريبية دون إرسال البيانات.
+const contactForm = document.querySelector("#contact-form");
+const contactName = document.querySelector("#contact-name");
+const formStatus = document.querySelector("#form-status");
+
+contactName.addEventListener("input", () => {
+  contactName.setCustomValidity("");
+});
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  formStatus.hidden = true;
+  contactName.setCustomValidity("");
+
+  const name = contactName.value.trim();
+  if (name.length < 2 || !/[A-Za-z\u00C0-\u024F\u0600-\u06FF]/.test(name)) {
+    contactName.setCustomValidity("يرجى إدخال اسم صحيح يتكوّن من حرفين على الأقل.");
+    contactName.reportValidity();
+    return;
+  }
+
+  if (!contactForm.checkValidity()) {
+    contactForm.reportValidity();
+    return;
+  }
+
+  formStatus.textContent = "تم التحقق من البيانات بنجاح. هذا نموذج تجريبي، ولم تُرسل بياناتك.";
+  formStatus.hidden = false;
+});
