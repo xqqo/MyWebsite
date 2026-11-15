@@ -4,215 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070b14">
-  <meta name="description" content="رحلة تعليمية مبسطة لاستكشاف الذكاء الاصطناعي والبرمجة والأمن السيبراني.">
-  <title>عالم التقنية والذكاء الاصطناعي</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="مشروع الطالب عبدالله متعب العنزي — عالم التقنية والذكاء الاصطناعي.">
+  <title>مشروع الطالب عبدالله متعب العنزي</title>
+  <link rel="stylesheet" href="welcome.css">
+  <script src="welcome.js" defer></script>
 </head>
-<body>
-  <div class="page-glow page-glow-one" aria-hidden="true"></div>
-  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+<body class="welcome-page">
+  <div class="welcome-glow welcome-glow-one" aria-hidden="true"></div>
+  <div class="welcome-glow welcome-glow-two" aria-hidden="true"></div>
+  <div class="welcome-grid" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#الرئيسية" aria-label="عالم التقنية والذكاء الاصطناعي - الصفحة الرئيسية">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 34 11.6v16.8L20 36.5 6 28.4V11.6L20 3.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M13 25V15l7 6 7-6v10M11 20h3m12 0h3m-9-9v3m0 12v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        <span class="brand-name">عالم <b>التقنية</b></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
-        <a class="nav-link active" href="#الرئيسية">الرئيسية</a>
-        <a class="nav-link" href="#الذكاء-الاصطناعي">الذكاء الاصطناعي</a>
-        <a class="nav-link" href="#البرمجة">لغات البرمجة</a>
-        <a class="nav-link" href="#الأمن-السيبراني">الأمن السيبراني</a>
-      </nav>
-      <a class="header-cta" href="#المشروع">اكتشف المشروع <span aria-hidden="true">←</span></a>
+  <main class="welcome-main">
+    <div class="welcome-orbit orbit-outer" aria-hidden="true"></div>
+    <div class="welcome-orbit orbit-inner" aria-hidden="true"></div>
+    <div class="welcome-content">
+      <div class="welcome-emblem" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M32 5 55 18v28L32 59 9 46V18L32 5Z" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M21 39V25l11 9 11-9v14M16 32h6m20 0h6M32 17v6m0 18v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="welcome-kicker"><span></span> مشروع تعليمي في عالم التقنية</span>
+      <h1>مشروع الطالب<br><span>عبدالله متعب العنزي</span></h1>
+      <p class="welcome-description">رحلة لاكتشاف الذكاء الاصطناعي والبرمجة والأمن السيبراني</p>
+      <a class="continue-button" href="home.html">أكمل <span aria-hidden="true">←</span></a>
+      <div class="welcome-caption"><i></i> المعرفة تبدأ بفضولك</div>
     </div>
-  </header>
-
-  <main>
-    <section class="hero section" id="الرئيسية">
-      <div class="container hero-layout">
-        <div class="hero-copy reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span> بوابتك إلى المستقبل الرقمي</span>
-          <h1>نستكشف التقنية،<br>ونصنع <span class="gradient-text">المستقبل.</span></h1>
-          <p class="hero-description">رحلة ممتعة إلى عالم الذكاء الاصطناعي والبرمجة والأمن السيبراني؛ لنتعلم كيف تعمل التقنيات من حولنا، وكيف نستخدمها لصناعة أثر إيجابي.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#الذكاء-الاصطناعي">ابدأ رحلتك <span aria-hidden="true">←</span></a>
-            <a class="button button-quiet" href="#البرمجة"><span class="play-icon" aria-hidden="true">▶</span> استكشف المجالات</a>
-          </div>
-          <div class="hero-note"><span class="note-line"></span> المعرفة التقنية خطوة أولى نحو الابتكار</div>
-        </div>
-
-        <div class="hero-art reveal" aria-label="رسم توضيحي لشبكة تقنية مضيئة" role="img">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orbit orbit-three"></div>
-          <div class="art-grid"></div>
-          <div class="art-center">
-            <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
-              <path d="M60 13 99 35.5v49L60 107 21 84.5v-49L60 13Z" stroke="currentColor" stroke-width="2"/>
-              <path d="M42 70V50l18 15 18-15v20M35 60h8m34 0h8M60 39v9m0 24v9" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="60" cy="60" r="44" stroke="currentColor" stroke-opacity=".22"/>
-            </svg>
-          </div>
-          <div class="floating-chip chip-ai"><span class="chip-icon">✳</span><span><b>ذكاء اصطناعي</b><small>أفكار تتعلّم</small></span></div>
-          <div class="floating-chip chip-code"><span class="code-symbol">&lt;/&gt;</span><span><b>برمجة</b><small>نحوّل الأفكار إلى واقع</small></span></div>
-          <div class="floating-chip chip-shield"><span class="shield-symbol">⬡</span><span><b>أمان رقمي</b><small>نحمي عالمنا</small></span></div>
-          <span class="spark spark-one"></span><span class="spark spark-two"></span><span class="spark spark-three"></span>
-        </div>
-      </div>
-      <div class="hero-bottom container">
-        <span>رحلة تعليمية مبسّطة</span><span class="hero-bottom-line"></span><span>المعرفة تبدأ بفضولك</span>
-      </div>
-    </section>
-
-    <section class="intro-strip" aria-label="موضوعات الموقع">
-      <div class="container strip-inner">
-        <span><i class="strip-dot"></i> الذكاء الاصطناعي</span><span><i class="strip-dot"></i> البرمجة</span><span><i class="strip-dot"></i> الأمن السيبراني</span><span class="strip-caption">ثلاثة عوالم، ومستقبل واحد</span>
-      </div>
-    </section>
-
-    <section class="section content-section" id="الذكاء-الاصطناعي">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="section-kicker">01 — ذكاء يصنع الفرق</span><h2>ما هو <span class="gradient-text">الذكاء الاصطناعي؟</span></h2></div>
-          <p>تقنية تمنح الحاسوب القدرة على التعلّم من البيانات، وفهم الأنماط، ومساعدة الإنسان في إنجاز مهام متنوعة.</p>
-        </div>
-        <div class="ai-feature-card reveal">
-          <div class="ai-visual">
-            <div class="ai-ring ring-a"></div><div class="ai-ring ring-b"></div>
-            <div class="ai-core"><span>AI</span><i></i></div>
-            <span class="ai-node node-a">بيانات</span><span class="ai-node node-b">تعلّم</span><span class="ai-node node-c">حلول</span>
-            <div class="ai-visual-caption"><span class="live-dot"></span> من البيانات إلى المعرفة</div>
-          </div>
-          <div class="ai-feature-copy">
-            <span class="mini-label">تقنية تتعلّم وتتطوّر</span>
-            <h3>آلة تتعلّم، لتساعد الإنسان</h3>
-            <p>لا يعني الذكاء الاصطناعي أن الآلة تفكر مثل الإنسان تمامًا؛ بل نطوّر أنظمة تحلل أمثلة ومعلومات لتتعرف إلى الصور، أو تفهم اللغة، أو تقترح حلولًا.</p>
-            <div class="benefit-grid">
-              <div class="benefit"><span class="benefit-icon">✦</span><span><b>يوفّر الوقت</b><small>ينجز المهام المتكررة بسرعة.</small></span></div>
-              <div class="benefit"><span class="benefit-icon">⌕</span><span><b>يحلّل المعلومات</b><small>يساعد على اكتشاف الأنماط.</small></span></div>
-              <div class="benefit"><span class="benefit-icon">♡</span><span><b>يدعم التعلّم</b><small>يقدّم تجارب تناسب احتياجاتنا.</small></span></div>
-              <div class="benefit"><span class="benefit-icon">↗</span><span><b>يفتح آفاقًا جديدة</b><small>يساعد في الطب والعلوم وغيرها.</small></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="example-row reveal"><span class="example-label">نراه في حياتنا اليومية</span><span class="example-pill">المساعدات الصوتية</span><span class="example-pill">اقتراحات المحتوى</span><span class="example-pill">التعرّف على الصور</span><span class="example-pill">الترجمة الآلية</span></div>
-      </div>
-    </section>
-
-    <section class="section content-section programming-section" id="البرمجة">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="section-kicker">02 — أدوات المبتكرين</span><h2>لغات تكتب <span class="gradient-text">المستقبل</span></h2></div>
-          <p>البرمجة هي طريقة نكتب بها تعليمات واضحة للحاسوب. لكل لغة أدواتها واستخداماتها المميزة.</p>
-        </div>
-        <div class="language-grid">
-          <article class="language-card html-card reveal">
-            <div class="language-top"><span class="language-icon">&lt;/&gt;</span><span class="language-number">01</span></div>
-            <h3>HTML</h3><span class="language-type">هيكل صفحات الويب</span>
-            <p>ترتب محتوى الصفحة مثل العناوين والفقرات والصور والروابط.</p>
-            <div class="code-sample"><span>&lt;h1&gt;</span>مرحبًا بالعالم<span>&lt;/h1&gt;</span></div>
-            <button class="text-button detail-toggle" type="button" aria-expanded="false">اعرف أكثر <span aria-hidden="true">←</span></button>
-            <p class="language-detail" hidden>تخيّل HTML مثل هيكل المنزل؛ فهي تحدد العناصر التي تظهر في صفحة الويب.</p>
-          </article>
-          <article class="language-card css-card reveal">
-            <div class="language-top"><span class="language-icon">✳</span><span class="language-number">02</span></div>
-            <h3>CSS</h3><span class="language-type">تصميم صفحات الويب</span>
-            <p>تضيف الألوان والتنسيق والمسافات والحركة إلى صفحات الويب.</p>
-            <div class="code-sample"><span>color:</span> <b>#168bff</b>; <span>✨</span></div>
-            <button class="text-button detail-toggle" type="button" aria-expanded="false">اعرف أكثر <span aria-hidden="true">←</span></button>
-            <p class="language-detail" hidden>CSS مثل الديكور والألوان؛ تجعل الصفحة أجمل وأسهل في الاستخدام على الشاشات المختلفة.</p>
-          </article>
-          <article class="language-card js-card reveal">
-            <div class="language-top"><span class="language-icon">JS</span><span class="language-number">03</span></div>
-            <h3>JavaScript</h3><span class="language-type">التفاعل في صفحات الويب</span>
-            <p>تضيف التفاعل، مثل القوائم والأزرار والاختبارات القصيرة.</p>
-            <div class="code-sample"><span>let</span> فكرة = <b>"رائعة"</b>;</div>
-            <button class="text-button detail-toggle" type="button" aria-expanded="false">اعرف أكثر <span aria-hidden="true">←</span></button>
-            <p class="language-detail" hidden>JavaScript تجعل الصفحة تستجيب للمستخدم، وتنفذ أفعالًا عند الضغط أو الاختيار.</p>
-          </article>
-          <article class="language-card python-card reveal">
-            <div class="language-top"><span class="language-icon">Py</span><span class="language-number">04</span></div>
-            <h3>Python</h3><span class="language-type">لغة متعددة الاستخدامات</span>
-            <p>لغة واضحة للمبتدئين وتستخدم في تحليل البيانات والذكاء الاصطناعي.</p>
-            <div class="code-sample"><span>print</span>(<b>"أهلًا!"</b>)</div>
-            <button class="text-button detail-toggle" type="button" aria-expanded="false">اعرف أكثر <span aria-hidden="true">←</span></button>
-            <p class="language-detail" hidden>تتميّز Python بسهولة قراءة أوامرها، وتساعد على بناء تطبيقات وأدوات في مجالات كثيرة.</p>
-          </article>
-        </div>
-        <p class="programming-note"><span>✦</span> كل مشروع كبير يبدأ بسطر صغير من الشيفرة.</p>
-      </div>
-    </section>
-
-    <section class="section content-section cyber-section" id="الأمن-السيبراني">
-      <div class="container">
-        <div class="cyber-card reveal">
-          <div class="cyber-copy">
-            <span class="section-kicker">03 — كن واعيًا رقميًا</span>
-            <h2>أمنك الرقمي<br>مسؤوليتك.</h2>
-            <p>الأمن السيبراني هو حماية الأجهزة والحسابات والبيانات من الاستخدام غير المصرح به. وعادات بسيطة تساعدنا على البقاء أكثر أمانًا.</p>
-            <ul class="safety-list">
-              <li><span>✓</span> استخدم كلمة مرور قوية وفريدة.</li>
-              <li><span>✓</span> لا تفتح روابط أو مرفقات مجهولة.</li>
-              <li><span>✓</span> لا تشارك معلوماتك الشخصية مع الغرباء.</li>
-              <li><span>✓</span> حدّث أجهزتك وتطبيقاتك باستمرار.</li>
-            </ul>
-            <a class="button button-primary" href="#اختبر-معرفتك">اختبر معرفتك <span aria-hidden="true">←</span></a>
-          </div>
-          <div class="cyber-art" aria-label="رسم توضيحي لقفل يحمي البيانات" role="img">
-            <div class="cyber-grid"></div>
-            <div class="cyber-orbit cyber-orbit-one"></div><div class="cyber-orbit cyber-orbit-two"></div>
-            <div class="cyber-shield">
-              <svg viewBox="0 0 120 140" fill="none" aria-hidden="true"><path d="M60 8 105 25v38c0 31-19 53-45 68C34 116 15 94 15 63V25L60 8Z" stroke="currentColor" stroke-width="3"/><rect x="42" y="58" width="36" height="29" rx="6" stroke="currentColor" stroke-width="3"/><path d="M49 58v-9a11 11 0 0 1 22 0v9m-11 13v5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
-            </div>
-            <span class="cyber-tag tag-one">حسابات آمنة</span><span class="cyber-tag tag-two">بيانات محمية</span>
-            <span class="cyber-pulse pulse-one"></span><span class="cyber-pulse pulse-two"></span>
-          </div>
-        </div>
-        <div class="quiz-card reveal" id="اختبر-معرفتك">
-          <div class="quiz-heading"><span class="quiz-icon">؟</span><div><span class="mini-label">سؤال سريع</span><h3>وصلتك رسالة من مصدر مجهول، ماذا تفعل؟</h3></div></div>
-          <div class="quiz-options" role="group" aria-label="اختر التصرف الأكثر أمانًا">
-            <button type="button" class="quiz-option" data-correct="false">أفتح الرابط لأعرف محتواه</button>
-            <button type="button" class="quiz-option" data-correct="true">أتجنب الرابط وأتحقق من المرسل</button>
-            <button type="button" class="quiz-option" data-correct="false">أرسلها إلى أصدقائي</button>
-          </div>
-          <p class="quiz-feedback" aria-live="polite"></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-section" id="المشروع">
-      <div class="project-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="container project-content reveal">
-        <span class="project-mark"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3.5 34 11.6v16.8L20 36.5 6 28.4V11.6L20 3.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M13 25V15l7 6 7-6v10M11 20h3m12 0h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
-        <span class="section-kicker">ختام الرحلة</span>
-        <h2>التقنية ليست مستقبلًا ننتظره،<br><span class="gradient-text">بل مستقبل نبنيه معًا.</span></h2>
-        <p>بفضولنا، وتعلّمنا، واستخدامنا المسؤول للتقنية؛ نستطيع أن نكون جزءًا من عالم رقمي أفضل.</p>
-        <div class="project-divider"></div>
-        <span class="project-title">مشروع مادة الحاسب</span>
-        <span class="project-subtitle">عالم التقنية والذكاء الاصطناعي</span>
-      </div>
-    </section>
+    <span class="welcome-star star-one" aria-hidden="true"></span>
+    <span class="welcome-star star-two" aria-hidden="true"></span>
+    <span class="welcome-star star-three" aria-hidden="true"></span>
+    <span class="welcome-star star-four" aria-hidden="true"></span>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="brand footer-brand" href="#الرئيسية"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 34 11.6v16.8L20 36.5 6 28.4V11.6L20 3.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M13 25V15l7 6 7-6v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span class="brand-name">عالم <b>التقنية</b></span></a>
-      <p>صُنع بشغف للتعلّم والاكتشاف <span>✦</span></p>
-      <span class="footer-copy">© <span id="current-year"></span> مشروع مادة الحاسب</span>
-    </div>
-  </footer>
-  <button class="back-to-top" type="button" aria-label="العودة إلى أعلى الصفحة">↑</button>
-  <script src="script.js"></script>
+  <footer class="welcome-footer">مشروع مادة الحاسب <span>✦</span></footer>
 </body>
 </html>

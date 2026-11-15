@@ -1,0 +1,70 @@
+/* تصميم مستقل لصفحة الترحيب */
+:root {
+  color-scheme: dark;
+  --welcome-blue: #278fff;
+  --welcome-cyan: #62d7ff;
+}
+
+* { box-sizing: border-box; }
+html, body { min-width: 320px; min-height: 100%; margin: 0; }
+html { background: #070b14; }
+body.welcome-page {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 46%, #0c1728 0%, #080e19 46%, #060910 100%);
+  color: #f5f8ff;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.welcome-glow { position: absolute; width: min(44vw, 500px); aspect-ratio: 1; border-radius: 50%; filter: blur(115px); opacity: .14; pointer-events: none; }
+.welcome-glow-one { top: -25%; right: -9%; background: #087bff; animation: glow-drift 11s ease-in-out infinite alternate; }
+.welcome-glow-two { bottom: -34%; left: -9%; background: #00c8ed; animation: glow-drift 14s ease-in-out infinite alternate-reverse; }
+.welcome-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(99, 145, 203, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(99, 145, 203, .045) 1px, transparent 1px); background-size: 46px 46px; mask-image: radial-gradient(ellipse at center, #000 8%, transparent 76%); pointer-events: none; }
+.welcome-main { position: relative; display: grid; width: min(100%, 900px); min-height: 610px; min-height: min(76svh, 720px); place-items: center; padding: 48px 24px; isolation: isolate; }
+.welcome-content { position: relative; z-index: 2; display: flex; width: min(100%, 680px); align-items: center; flex-direction: column; text-align: center; animation: welcome-appear .9s cubic-bezier(.2,.7,.25,1) both; }
+.welcome-emblem { display: grid; width: 75px; height: 75px; place-items: center; margin-bottom: 27px; border: 1px solid rgba(95, 205, 255, .36); border-radius: 23px; background: linear-gradient(145deg, rgba(27, 119, 205, .18), rgba(11, 23, 40, .78)); box-shadow: 0 0 60px rgba(30, 147, 255, .18), inset 0 0 25px rgba(71, 185, 255, .09); color: var(--welcome-cyan); transform: rotate(-4deg); }
+.welcome-emblem svg { width: 47px; height: 47px; }
+.welcome-kicker { display: inline-flex; align-items: center; gap: 9px; padding: 7px 13px; border: 1px solid rgba(77, 170, 239, .2); border-radius: 99px; background: rgba(15, 75, 125, .14); color: #9dc8e6; font-size: 12px; }
+.welcome-kicker span { width: 6px; height: 6px; border-radius: 50%; background: var(--welcome-cyan); box-shadow: 0 0 12px var(--welcome-cyan); }
+.welcome-content h1 { margin: 26px 0 11px; font-size: clamp(34px, 6vw, 57px); font-weight: 700; line-height: 1.65; letter-spacing: -.8px; }
+.welcome-content h1 span { color: var(--welcome-cyan); background: linear-gradient(100deg, #70e1ff, #448eff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.welcome-description { margin: 0; color: #98a9be; font-size: clamp(13px, 2vw, 15px); line-height: 2; }
+.continue-button { display: inline-flex; min-width: 158px; min-height: 51px; align-items: center; justify-content: center; gap: 16px; margin-top: 31px; padding: 0 24px; border: 1px solid rgba(108, 192, 255, .4); border-radius: 8px; background: linear-gradient(110deg, #208cf0, #2864dc); box-shadow: 0 8px 30px rgba(24, 116, 234, .25); color: #fff; font-size: 15px; font-weight: 700; text-decoration: none; transition: transform .22s ease, box-shadow .22s ease, filter .22s ease; }
+.continue-button:hover { transform: translateY(-3px); box-shadow: 0 12px 38px rgba(24, 132, 255, .4); filter: brightness(1.08); }
+.continue-button:focus-visible { outline: 3px solid #8ce5ff; outline-offset: 4px; }
+.continue-button span { transition: transform .2s ease; }
+.continue-button:hover span { transform: translateX(-4px); }
+.welcome-caption { display: flex; align-items: center; gap: 9px; margin-top: 35px; color: #6f8097; font-size: 10px; }
+.welcome-caption i { width: 24px; height: 1px; background: #347fb3; }
+.welcome-orbit { position: absolute; z-index: 0; top: 50%; left: 50%; border: 1px solid rgba(69, 160, 232, .11); border-radius: 50%; pointer-events: none; }
+.orbit-outer { width: min(75vw, 670px); aspect-ratio: 1; animation: orbit-turn 50s linear infinite; }
+.orbit-inner { width: min(62vw, 545px); aspect-ratio: 1; border-style: dashed; opacity: .6; animation: orbit-turn 75s linear infinite reverse; }
+.welcome-star { position: absolute; z-index: 1; width: 4px; height: 4px; border-radius: 50%; background: #7de1ff; box-shadow: 0 0 13px #47bfff; animation: star-twinkle 2.8s ease-in-out infinite alternate; }
+.star-one { top: 20%; right: 16%; }.star-two { top: 63%; right: 12%; animation-delay: -1s; }.star-three { bottom: 20%; left: 17%; animation-delay: -1.7s; }.star-four { top: 25%; left: 20%; animation-delay: -.6s; }
+.welcome-footer { position: absolute; right: 20px; bottom: 18px; left: 20px; color: #637289; font-size: 10px; text-align: center; }
+.welcome-footer span { margin-right: 5px; color: #54bfff; }
+.welcome-page.is-leaving .welcome-content { animation: welcome-exit .22s ease-in both; }
+
+@keyframes welcome-appear { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes welcome-exit { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes orbit-turn { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes star-twinkle { from { opacity: .3; transform: scale(.7); } to { opacity: 1; transform: scale(1.25); } }
+@keyframes glow-drift { to { transform: translate(-24px, 25px) scale(1.1); } }
+
+@media (max-width: 600px) {
+  .welcome-main { min-height: 580px; min-height: min(78svh, 700px); padding: 38px 21px; }
+  .welcome-emblem { width: 65px; height: 65px; margin-bottom: 23px; border-radius: 20px; }
+  .welcome-emblem svg { width: 42px; height: 42px; }
+  .welcome-content h1 { margin-top: 22px; font-size: clamp(32px, 8.5vw, 43px); }
+  .welcome-description { max-width: 310px; }
+  .orbit-outer { width: 100vw; }.orbit-inner { width: 82vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
